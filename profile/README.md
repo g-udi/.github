@@ -56,7 +56,7 @@ Contributions are welcome across the public repos. The short version:
 - Avoid committing machine-local files, secrets, generated runtime output, or private templates.
 - Run the repo's documented validation command before opening a pull request.
 
-See the organization-wide [contributing guide](https://github.com/g-udi/.github/blob/master/CONTRIBUTING.md) for details.
+See the organization-wide [contributing guide](https://github.com/g-udi/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Development Standards
 
