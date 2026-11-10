@@ -20,6 +20,7 @@ Thanks for taking the time to improve a g-udi project. This guide applies to the
 Common validation commands used across the repos include:
 
 ```sh
+test/run
 ./test/smoke.sh
 ./test/test.sh
 git diff --check
