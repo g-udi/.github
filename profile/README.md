@@ -1,6 +1,6 @@
 # g-udi
 
-g-udi is a collection of tools for making a macOS and Unix-like development environment reproducible, comfortable, and inspectable. The projects cover machine bootstrap, shell frameworks, prompt themes, and desktop/status-bar widgets.
+g-udi is a collection of tools for making a macOS and Unix-like development environment reproducible, comfortable, and inspectable. The projects cover machine bootstrap, shell frameworks, prompt themes, desktop/status-bar widgets, and a design system.
 
 The common goal is simple: a fresh machine should be able to become a working environment from versioned configuration, and the tools that keep it running should be small enough to understand.
 
@@ -34,6 +34,12 @@ The common goal is simple: a fresh machine should be able to become a working en
 | [gaudi-sketchybar](https://github.com/g-udi/gaudi-sketchybar) | macOS SketchyBar setup for notifications, system stats, yabai spaces, and app-local status. |
 | [gaudiBar.ubersicht.widget](https://github.com/g-udi/gaudiBar.ubersicht.widget) | Responsive Übersicht menu bar made from configurable widgets. |
 | [gaudiDesktop.ubersicht.widgets](https://github.com/g-udi/gaudiDesktop.ubersicht.widgets) | Übersicht desktop dashboard for productivity inboxes, metrics, GitHub, and calendar cards. |
+
+### Design System
+
+| Repository | Purpose |
+|------------|---------|
+| [design-system](https://github.com/g-udi/design-system) | Gaudi React design system for Ahmad Assaf's blog: components, MDX primitives, tokens, Tailwind preset, and Storybook docs. |
 
 ## How The Pieces Fit
 
