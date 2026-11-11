@@ -10,16 +10,16 @@ The common goal is simple: a fresh machine should be able to become a working en
 
 | Repository | Purpose |
 |------------|---------|
-| [gaudi](https://github.com/g-udi/gaudi) | Workstation bootstrapper for installing prerequisites, templates, software lists, configuration scripts, backups, and the `gaudi` CLI. |
-| [gaudi-templates](https://github.com/g-udi/gaudi-templates) | Public templates used by Gaudi to define package lists, hooks, and machine configuration. |
+| [gaudi](https://github.com/g-udi/gaudi) | Workstation bootstrapper for macOS, Debian/Ubuntu, Fedora, Arch and openSUSE: installs prerequisites, templates, software from [Brewfiles](https://docs.brew.sh/Brew-Bundle-and-Brewfile) and package lists, configuration scripts and dotfiles, with backups and template checks through the `gaudi` CLI. |
+| [gaudi-templates](https://github.com/g-udi/gaudi-templates) | Public templates used by Gaudi to define Brewfiles, package lists, hooks, machine configuration, and the dotfiles to back up. |
 | [gaudi-helper](https://github.com/g-udi/gaudi-helper) | Shell helper that watches successful package-manager installs and keeps Gaudi template package lists updated. |
 
 ### Shell Frameworks
 
 | Repository | Purpose |
 |------------|---------|
-| [gaudi-shell](https://github.com/g-udi/gaudi-shell) | Cross-shell framework for aliases, plugins, completions, and themes across Bash and Zsh. |
-| [gaudi-bash](https://github.com/g-udi/gaudi-bash) | Bash-focused shell framework and loader. |
+| [gaudi-shell](https://github.com/g-udi/gaudi-shell) | Cross-shell framework for aliases, plugins, completions, and themes across Bash and Zsh, evolved from gaudi-bash. Its command is `gshell`. |
+| [gaudi-bash](https://github.com/g-udi/gaudi-bash) | Bash-focused shell framework and loader, the predecessor of gaudi-shell. Its command is `gbash`. |
 | [gaudi-bash-components](https://github.com/g-udi/gaudi-bash-components) | Component container for aliases, plugins, completions, and themes. |
 | [gaudi-bash-aliases](https://github.com/g-udi/gaudi-bash-aliases) | Bash alias components. |
 | [gaudi-bash-completions](https://github.com/g-udi/gaudi-bash-completions) | Bash completion components. |
@@ -42,7 +42,7 @@ Gaudi starts with the machine:
 1. [gaudi](https://github.com/g-udi/gaudi) bootstraps the workstation.
 2. [gaudi-templates](https://github.com/g-udi/gaudi-templates) defines what gets installed and configured.
 3. [gaudi-helper](https://github.com/g-udi/gaudi-helper) keeps those lists current as you install new tools.
-4. [gaudi-shell](https://github.com/g-udi/gaudi-shell), [gaudi-bash](https://github.com/g-udi/gaudi-bash), and the shell component repos shape the interactive terminal.
+4. [gaudi-shell](https://github.com/g-udi/gaudi-shell), which Gaudi's setup offers as the shell helper, shapes the interactive terminal; [gaudi-bash](https://github.com/g-udi/gaudi-bash) and the shell component repos are the Bash-only framework it evolved from.
 5. [gaudi-theme](https://github.com/g-udi/gaudi-theme), [gaudi-sketchybar](https://github.com/g-udi/gaudi-sketchybar), and the Übersicht widgets surface useful context while you work.
 
 ## Contribution Guidelines
@@ -56,7 +56,7 @@ Contributions are welcome across the public repos. The short version:
 - Avoid committing machine-local files, secrets, generated runtime output, or private templates.
 - Run the repo's documented validation command before opening a pull request.
 
-See the organization-wide [contributing guide](https://github.com/g-udi/.github/blob/master/CONTRIBUTING.md) for details.
+See the organization-wide [contributing guide](https://github.com/g-udi/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Development Standards
 
