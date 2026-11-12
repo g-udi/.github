@@ -14,7 +14,7 @@ Thanks for taking the time to improve a g-udi project. This guide applies to the
 1. Fork or clone the target repository.
 2. Create a focused branch.
 3. Make the smallest change that solves the issue cleanly.
-4. Run the repository's smoke test or validation command (see below for the repositories that have none).
+4. Run the repository's smoke test or validation command (see below for repositories that do not document one).
 5. Update README or plugin docs when user-facing behavior changes.
 
 Common validation commands used across the repos include:
@@ -29,7 +29,7 @@ shellcheck -x path/to/script.sh
 
 Use the command documented by the repository you are changing.
 
-The Bash component repositories ([gaudi-bash-aliases](https://github.com/g-udi/gaudi-bash-aliases), [gaudi-bash-completions](https://github.com/g-udi/gaudi-bash-completions) and [gaudi-bash-plugins](https://github.com/g-udi/gaudi-bash-plugins)) do not ship a smoke test. For those, check every file you changed for syntax and lint errors instead:
+Some repositories do not ship a test or document a validation command, for example the Bash component repositories ([gaudi-bash-aliases](https://github.com/g-udi/gaudi-bash-aliases), [gaudi-bash-completions](https://github.com/g-udi/gaudi-bash-completions), [gaudi-bash-plugins](https://github.com/g-udi/gaudi-bash-plugins) and [gaudi-bash-themes](https://github.com/g-udi/gaudi-bash-themes)). For any repository without one, check every shell file you changed for syntax and lint errors instead:
 
 ```sh
 bash -n path/to/changed-file.bash
@@ -77,7 +77,7 @@ If a README has screenshots or visual examples, preserve them unless they are in
 Before opening a pull request:
 
 - The branch is focused and does not include unrelated formatting churn.
-- The relevant smoke test passes or, for the Bash component repositories without one, `bash -n` and `shellcheck` are clean on every changed file.
+- The relevant smoke test passes or, for a repository without one, `bash -n` and `shellcheck` are clean on every changed shell file.
 - `git diff --check` is clean.
 - Documentation is updated for user-facing changes.
 - Secrets, private paths, generated output, and local caches are not committed.
@@ -94,4 +94,4 @@ Some g-udi projects are intentionally related, especially the shell framework an
 
 ## Security
 
-Do not report secrets, tokens, or sensitive local-machine details in public issues. If you discover exposed credentials in a repository, rotate the credential first and then open a minimal issue or pull request that removes the secret and documents the safer configuration path.
+Do not report vulnerabilities, secrets, tokens, or sensitive local-machine details in public issues. Report them privately as described in the [security policy](https://github.com/g-udi/.github/blob/main/SECURITY.md). If the exposed credential is your own, rotate it first and then open a minimal issue or pull request that removes the secret and documents the safer configuration path.
